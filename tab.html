@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>个人简历MUI</title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <style>
+			li{
+				list-style: none;
+			}
+			.title{					
+				margin: 20px 0;
+			}
+			.center{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.center img{
+				width: 100px;
+			}
+			.title img{
+				border:1px solid #ABCDEF;
+				border-radius: 50%;
+			}
+			
+			.oa-contact-cell.mui-table .mui-table-cell {
+				padding: 11px 0;
+				vertical-align: middle;
+			}
+			
+			.oa-contact-cell {
+				position: relative;
+				margin: -11px 0;
+			}
+	
+			.oa-contact-avatar {
+				width: 75px;
+			}
+			.oa-contact-avatar img {
+				border-radius: 50%;
+			}
+			.oa-contact-content {
+				width: 100%;
+			}
+			.oa-contact-name {
+				margin-right: 20px;
+			}
+			.oa-contact-name, oa-contact-position {
+				float: left;
+			}
+			/*技能*/
+			#bg{
+				background: url(images/bg_1.png);
+				background-size: 100% 100%;
+			}
+			.exp{
+				color:gray;
+				font-weight: bold;
+			}
+			.hou{
+				color: #000000;
+			}
+		</style>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init({
+			swipeBack:true 
+		});
+		//技能
+		mui.ajax('http://1.1044987073.applinzi.com/www/skill.json',{
+		dataType:'json',
+		type:'get',
+		timeout:10000,
+		headers:{'Content-Type':'application/json'},	              
+		success:function(data){
+				   var table = document.body.querySelector('.mui-table-view');
+					var cells = document.body.querySelectorAll('.mui-table-view-cell');
+					var len=data.length;
+					for (var i =0; i < len; i++) {
+						var li = document.createElement('li');
+						li.className = 'mui-table-view-cell';
+						li.innerHTML +='<p><span class="exp">类型：</span><span class="hou">'+data[i].category+ '</span></p>';
+						li.innerHTML +='<p><span class="exp">获取知识：</span><span class="hou">'+data[i].name+ '</span></p>';
+						li.innerHTML +='<p><span class="exp">学习时间：</span><span class="hou">'+data[i].time+ '</span></p>';
+						li.innerHTML += '<p><span class="exp">接触程度：</span><span class="hou">'+data[i].level+ '</span></p>';
+						table.appendChild(li);
+					}
+			}
+		});
+		//项目经历
+		mui.ajax('http://1.1044987073.applinzi.com/www/project.json',{
+		dataType:'json',
+		type:'get',
+		timeout:10000,
+		headers:{'Content-Type':'application/json'},	              
+		success:function(data){
+				   var table = document.body.querySelector('.mui-table-view');
+					var cells = document.body.querySelectorAll('.mui-table-view-cell');
+					var twopage = document.body.querySelector('.mui-card');
+					var len=data.length;
+					for (var i =0; i < len; i++) {
+						var li = document.createElement('li');
+						li.innerHTML +='<div class="mui-card"><div class="mui-card-header">'+data[i].category+'</div><div class="mui-card-header mui-card-media" style="height:40vw;background-image:url('+data[i].images+')"></div><div class="mui-card-content"><div class="mui-card-content-inner"><p style="color: #333;">项目简介：'+data[i].description+'</p><p>项目技术：'+data[i].tech+ '</p></div></div></div>'
+						twopage.appendChild(li);
+					}
+			}
+		});
+		//工作经历
+		mui.ajax('http://1.1044987073.applinzi.com/www/work.json',{
+		dataType:'json',
+		type:'get',
+		timeout:10000,
+		headers:{'Content-Type':'application/json'},	              
+		success:function(data){
+				   var table = document.body.querySelector('.mui-table-view');
+					var cells = document.body.querySelectorAll('.mui-table-view-cell');
+					var threepage = document.body.querySelector('.threePage');
+					var len=data.length;
+					for (var i =0; i < len; i++) {
+						var li = document.createElement('li');
+						li.innerHTML +='<div class="mui-card"><div class="mui-card-header">'+data[i].category+'</div><div class="mui-card-header mui-card-media" style="height:40vw;background-image:url('+data[i].images1+')"></div><div class="mui-card-content"><div class="mui-card-content-inner"><p style="color: #333;">人员配备：'+data[i].peoples+ '</p><p style="color: #333;">工作环境：'+data[i].name+ '</p><p style="color: #333;">技术涉及：'+data[i].projects+ '</p><p>工作时间：'+data[i].time+'</p></div></div></div>'
+						threepage.appendChild(li);
+					}
+			}
+		});
+    </script>
+</head>
+<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">我的简历</h1>
+			<a class="mui-icon mui-icon-plusempty mui-pull-right" id="open"></a>
+		</header>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" href="#tabbar">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">技能</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-chat">
+				<span class="mui-icon mui-icon-email"></span>
+				<span class="mui-tab-label">项目</span>
+			</a>
+			
+			<a class="mui-tab-item" href="#tabbar-with-contact">
+				<span class="mui-icon mui-icon-pengyouquan"></span>
+				<span class="mui-tab-label">经历</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-map">
+				<span class="mui-icon mui-icon-contact"></span>
+				<span class="mui-tab-label">我</span>
+			</a>
+		</nav>
+		<div class="mui-content">
+			<!--onePage-->
+			<div id="tabbar" class="mui-control-content mui-active">		
+				<ul class="mui-table-view mui-table-view-chevron" id="bg">				
+				</ul>
+			</div>
+			<!--twoPage-->
+			<div id="tabbar-with-chat" class="mui-control-content">
+				<div class="mui-card"></div>
+			</div>
+			
+			
+			<!--threePage-->
+			<div id="tabbar-with-contact" class="mui-control-content">
+				<div class="mui-card threePage"></div>
+			</div>
+			
+			<!--fourPage-->
+			<div id="tabbar-with-map" class="mui-control-content">
+					<div class="title center"><img src="images/touxiang.jpg"/></div>
+					<ul class="mui-table-view fourpage">
+					<li class="mui-table-view-cell">
+						<p class="center">
+							<span class="exp">我的名字：</span><span class="hou">周琴</span>
+						</p>
+					</li>
+					<li class="mui-table-view-cell">
+						<p class="center">
+							<span class="exp">毕业院校：</span><span class="hou">宿州学院</span>
+						</p>
+					</li>
+					<li class="mui-table-view-cell">
+						<p class="center">
+							<span class="exp">我的专业：</span><span class="hou">软件工程</span>
+						</p>
+					</li>
+					<li class="mui-table-view-cell">
+						<p class="center">
+							<span class="exp">手机号：</span><span class="hou">18895730103</span>
+						</p>
+					</li>
+					<li class="mui-table-view-cell">
+						<p class="center">
+							<span class="exp">QQ号：</span><span class="hou">1044987073</span>
+						</p>
+					</li>
+					<li class="mui-table-view-cell">
+						<span class="center exp">我的微信</span>
+						<p class="center">				
+							<img src="./images/weixin.jpg"/>
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+</body>
+</html>

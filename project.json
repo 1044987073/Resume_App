@@ -1,0 +1,28 @@
+[
+	{
+		"category":"电商类平台",
+		"name":"ZOL商城",
+		"url":"http://www.zol.com/",
+		"images":"images/ZOL_1.png",
+		"description":"ZOL商城购物平台,详细介绍了ZOL商城的主要情况,可供购买各式各样的东西，主要包括手机、电脑、摄像机等电器",
+		"detail":"长期维护，功能迭代，主要处理前端页面及程序嵌套，当时并未要求移动端适配，故该商城只适应于PC端应用",
+		"tech":"HTML、CSS2、CSS3、HTML5、Javascript、Jquery等"
+	},
+	{
+		"category":"企业门户",
+		"name":"江苏新众亚货架制造有限公司",
+		"url":"http://xzyrack00mbt.b2b.huangye88.com/",
+		"images":"images/xzy.png",
+		"description":"新众亚货架制造有限公司主营:横梁层板货架,悬臂流利货架,自动化立体库穿梭货架,阁楼平台驶入式货架",
+		"detail":"项目初建耗时4周，包括平台整体UI改进以及功能模块的增加与性能的优化，还有长期的维护",
+		"tech":"Html5、Css3、Javascript、Jquery、Java等"
+	},
+	{
+		"category":"移动平台",
+		"name":"童心相伴",
+		"images":"images/bg_five.png",
+		"description":"儿童健康成长护航者",
+		"detail":"项目初建耗时2月，主要包括数据支撑平台的建设、移动端Hybrid模式的应用及开发",
+		"tech":"Html5、Css3、Jquery、AngularJs、Java等"
+	}
+]

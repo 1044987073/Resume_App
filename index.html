@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>个人简历MUI</title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style>
+		html{
+			width: 100%;
+			height: 100%;
+			background: url(images/bg.jpg) no-repeat;
+			background-size: 100% 100%;
+		}
+			li {
+				list-style: none;
+			}
+			
+			.title {
+				margin:40px 0;
+				color: #ABCDEF;
+				font-weight: bolder;
+				font-size:60px;
+			}
+			
+			.center {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-top: 40px;
+			}
+			.center:last-child{
+				padding-bottom:50px;
+				color: #007AFF;
+			}
+			.center img {
+				width:200px;
+			}
+			
+			.title img {
+				border: 1px solid #ABCDEF;
+				border-radius: 50%;
+			}
+			.exp, .hou{
+				color: #000000;
+				font-weight: bold;
+				font-size: 16px;
+			}
+			.content{
+				background: url(images/bg.jpg);
+				background-size: 100% 100%;
+			}
+		</style>
+		<script type="text/javascript" charset="utf-8">
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="content">
+			<div class="title center"><img src="images/touxiang.jpg" /></div>
+				<p class="center title">
+					个人简历
+				</p>
+				<p class="center">
+					<span class="exp">姓名：</span><span class="hou">周琴</span>
+				</p>
+				<p class="center">
+					<span class="exp">性别：</span><span class="hou">女</span>
+				</p>
+				<p class="center">
+					<span class="exp">年龄：</span><span class="hou">22</span>
+				</p>
+				<p class="center">
+					<button class="btn" id="btn"><a href="tabbar.html">进入了解</a></button>
+				</p>
+				<p class="center">
+					给我一个机会，还您一份惊喜
+				</p>
+		</div>
+	</body>
+</html>
+	
+	
+	

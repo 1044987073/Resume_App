@@ -1,0 +1,28 @@
+[
+	{
+		"category":"设计大赛",
+		"name":"宿州学院",
+		"url":"http://www.ahszu.edu.cn/",
+		"images1":"images/sy.jpg",
+		"images2":"images/sy_1.jpg",
+		"images3":"images/school_3.jpg",
+		"time":"2013年-2014年",
+		"posts":"信息工程IT创新实验室",
+		"reportto":"篮球仿真，仿真救援，5 VS 5等",
+		"peoples":"两名老师和三名学长以及我们同级三位同学",
+		"projects":"c#、LabVIEW等"
+	},
+	{
+		"category":"民营企业",
+		"name":"南京脸盆宝信息科技有限公司",
+		"url":"http://www.lianpenbao.com/",
+		"images1":"images/bg_3.jpg",
+		"images2":"images/bg_3.JPG",
+		"images3":"images/bg_3.jpg",
+		"time":"2016年-2017年",
+		"posts":"技术总监",
+		"reportto":"总经理",
+		"peoples":"17",
+		"projects":"ZOL商城、江苏新众亚货架制造、珍诚掌上医药、客户B2C项目手机版等"
+	}
+]

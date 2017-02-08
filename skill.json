@@ -1,0 +1,51 @@
+[
+	{
+		"category":"规范",
+		"name":"HTML4、HTML5、ES5、ES6、CommonJS、CMD、AMD等",
+		"time":"1年",
+		"level":"了解",
+		"image":"images/chrome.jpg",
+		"description":"html语义化就是让页面的内容结构化，便于对浏览器、搜索引擎解析；在没有样式CCS情况下也以一种文档格式显示，并且是容易阅读的。搜索引擎的爬虫依赖于标记来确定上下文和各个关键字的权重，利于 SEO。"
+	},
+	{
+		"category":"框架",
+		"name":"Jquery、Zepto、AngularJs、Recat、Bootstrap等",
+		"time":"2年",
+		"level":"熟悉",
+		"image":"images/chrome.jpg",
+		"description":"框架预先把众多组件组织在一起的方式，封装了处理流程的控制逻辑，因此开发者不用再编写控制逻辑来组织组件之间的交互。JQuery是轻量级的js库 ，它兼容CSS3，还兼容各种浏览器（IE 6.0+, FF 1.5+, Safari 2.0+, Opera 9.0+），jQuery2.0及后续版本将不再支持IE6/7/8浏览器。Bootstrap 是基于 HTML、CSS、JavaScript 的，它简洁灵活，使得 Web 开发更加快捷。"
+	},
+	{
+		"category":"类库",
+		"name":"Swiper、Iscroll等",
+		"time":"2年",
+		"level":"熟悉",
+		"image":"images/chrome.jpg",
+		"description":"类库是由许多现成的、供开发者用于构建应用的组件组成，但是，开发者必须理解不同组件之间的关系，并编写处理流程代码把众多组件组织起来的。iScroll是一个高性能，资源占用少，无依赖，多平台的javascript滚动插件。Swiper是一款免费以及轻量级的移动设备触控滑块的js框架"
+	},
+	{
+		"category":"布局",
+		"name":"Fixed、Fulid、Flex、Responsive",
+		"time":"3年",
+		"level":"精通",
+		"image":"images/chrome.jpg",
+		"description":"固定式布局：意思就是不管浏览器尺寸具体是多少，网页布局就按照当时写代码的布局来布置；流式布局：你看到的页面，元素的大小会变化而位置不会变化——这就导致如果屏幕太大或者太小都会导致元素无法正常显示。自适应布局：就是说你看到的页面，里面元素的位置会变化而大小不会变化；响应式布局：每个屏幕分辨率下面会有一个布局样式，同时位置会变而且大小也会变。"
+	},
+	{
+		"category":"程序",
+		"name":"Javascript原生、Jquery及Zepto插件、AngularJs、React等",
+		"time":"2年",
+		"level":"精通",
+		"image":"images/chrome.jpg",
+		"description":"Zepto是一个轻量级的针对现代高级浏览器的JavaScript库， 它与jquery有着类似的api；AngularJs完善的前端MVC、MVVM框架，包含模板、数据双向绑定、路由、模块化、服务、过滤器、依赖注入等，可以自定义封装directive，改变了传统JQuery以dom操作为核心的方式，以数据为中心ng提倡在控制器里面不要有操作DOM的代码 , 对于一些JQuery插件的使用，如果不想破坏代码的整洁性，需要写一些directive去封装插件"
+	}
+	,
+	{
+		"category":"APP框架",
+		"name":"MUI、Ionic等",
+		"time":"2年",
+		"level":"精通",
+		"image":"images/chrome.jpg",
+		"description":"前端框架MUI，最接近原生APP体验的前端框架，多端发布，高性能，不是响应式的，是模块化开发；Ionic是一款以web开发原生应用APP的框架，基于AngualrJs来增强应用,通过SASS构建应用程序,提供很多UI组件，旨在从web的角度开发手机应用，基于phoneGap的编译平台，事项编译成各个平台的应用程序。ios上比较流畅，但在android低版本机上运行有些卡。ionic是一个用来开发混合手机应用的，开源的，免费的代码库。可以优化html、css和js的性能，构建高效的应用程序，而且还可以用于构建Sass和AngularJS的优化。ionic会是一个可以信赖的框架。Ionic 底层打包使用 Cordova ( 和 Phonegap 一样 ) 底层打包用 Cordova 是不错的。 Ionic 是一个全堆栈的混合应用开发框架，可以理解成 Ionic = Cordova + AngularJS + Ionic UI"
+	}
+]

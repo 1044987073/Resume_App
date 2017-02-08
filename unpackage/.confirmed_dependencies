@@ -1,0 +1,72 @@
+{
+  "index.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "list.html",
+      "images/IE.jpg",
+      "images/bg.jpg",
+      "images/xzy.png",
+      "images/ZOL_1.png",
+      "images/school_1.jpg",
+      "images/ope.gif",
+      "tab.html",
+      "images/weixin.jpg",
+      "images/touxiang.jpg",
+      "tabbar.html",
+      "js/mui.zoom.js",
+      "js/mui.previewimage.js",
+      "images/sy.jpg"
+    ],
+    "refer": [
+      "index-menu.html",
+      "list.html",
+      "tab.html",
+      "tabbar.html"
+    ]
+  },
+  "tab.html": {
+    "resources": [
+      "images/ope.gif",
+      "images/xzy.png",
+      "fonts/mui.ttf",
+      "images/ZOL_1.png",
+      "images/school_1.jpg",
+      "index.html",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "images/bg_book.png",
+      "images/bg_1.jpg",
+      "images/bg.jpg",
+      "images/bg_1.png",
+      "images/sy.jpg",
+      "images/1.png",
+      "images/weixin.jpg",
+      "images/touxiang.jpg"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  },
+  "tabbar.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "index.html",
+      "images/chrome.jpg",
+      "images/weixin.jpg",
+      "images/touxiang.jpg",
+      "images/xzy.png",
+      "images/sy.jpg",
+      "images/ZOL_1.png",
+      "images/school_1.jpg",
+      "js/mui.previewimage.js",
+      "js/mui.zoom.js"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  }
+}
