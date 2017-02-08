@@ -18,11 +18,28 @@
 		"tech":"Html5、Css3、Javascript、Jquery、Java等"
 	},
 	{
+		"category":"企业门户",
+		"name":"宏图高科",
+		"url":"http://www.hiteker.com.cn/",
+		"images":"images/bg_2.jpg",
+		"description":"该项目是宏图高科的官方网站，介绍了江苏宏图高科技股份有限公司的内部情况。",
+		"detail":"项目初建耗时3周，包括用HTML5和CSS3的编写，搭建页面，用js原生完成tab切换等工作。CSS3动画完成二级菜单。用ajax与后台进行数据交互等，还有长期的维护",
+		"tech":"Html5、Css3、Javascript、Jquery、ajax等"
+	},
+	{
 		"category":"移动平台",
 		"name":"童心相伴",
 		"images":"images/bg_five.png",
 		"description":"儿童健康成长护航者",
-		"detail":"项目初建耗时2月，主要包括数据支撑平台的建设、移动端Hybrid模式的应用及开发",
+		"detail":"项目初建耗时1月，主要包括数据支撑平台的建设、移动端Hybrid模式的应用及开发",
 		"tech":"Html5、Css3、Jquery、AngularJs、Java等"
+	},
+	{
+		"category":"移动APP",
+		"name":"美味不用等",
+		"images":"images/bg_1.png",
+		"description":"美味不用等app是一款吃货必备的手机应用",
+		"detail":"项目耗时1月，主要包括数据支撑平台的建设、移动端Hybrid模式的应用及开发",
+		"tech":"Html5、Css3、Jquery、MUI等"
 	}
 ]
